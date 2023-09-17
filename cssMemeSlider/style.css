@@ -79,7 +79,7 @@ body {
 .controls {
     margin-top: 2%;
     display: inline-block;
-    width: 13%;
+    width: 15%;
 }
 
 .label-radio {
@@ -133,6 +133,11 @@ input[type="radio"] {
     height: 0.2rem;
 }
 
+@media (max-width: 1550px) {
+    .controls {
+        width: 20%;
+    }
+}
 @media (max-width: 1288px) {
     .container {
         max-width: 50%;
@@ -160,6 +165,22 @@ input[type="radio"] {
     .texts {
         align-self: flex-start;
         width: 50%;
+    }
+    .text {
+        margin-right: 80%;
+    }
+    
+    #input1:checked ~ .control-container .texts-container {
+        margin-left: 0;
+    }
+    #input2:checked ~ .control-container .texts-container {
+        margin-left: -133%;
+    }
+    #input3:checked ~ .control-container .texts-container {
+        margin-left: -235%;
+    }
+    #input4:checked ~ .control-container .texts-container {
+        margin-left: -350%;
     }
  }
 
