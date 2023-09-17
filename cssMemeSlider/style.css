@@ -255,3 +255,20 @@ input[type="radio"] {
         width: 25%;
     }
 }
+@media (max-width: 320px) {
+    .controls {
+        width: 37%;
+    }
+    #input1:checked ~ .control-container .texts-container {
+        margin-left: 0;
+    }
+    #input2:checked ~ .control-container .texts-container {
+        margin-left: -170%;
+    }
+    #input3:checked ~ .control-container .texts-container {
+        margin-left: -287%;
+    }
+    #input4:checked ~ .control-container .texts-container {
+        margin-left: -427%;
+}
+}
